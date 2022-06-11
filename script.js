@@ -82,7 +82,7 @@ function checkForWin() {
         winner = fields[2];
         document.getElementById('line-6').style.transform = 'rotate(90deg) scaleX(1)';
     }
-
+//diagonal
     if (fields[0] == fields[4] && fields[4] == fields[8] && fields[0]) {
         winner = fields[0];
         document.getElementById('line-7').style.transform = 'rotate(45deg) scaleX(1)';
