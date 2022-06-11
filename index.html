@@ -9,6 +9,8 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
+    <img class="game-over d-none" id="game-over" src="./img/game-over.jpg">
+    <button onclick="restart()" id="restart-button" class="restart-btn d-none">Restart</button>
     <div class="player-panel">
         <div class="player-panel-div player-inactive" id="player-1">
             <img class="player-panel-img" src="./img/circle.png">Player 1
@@ -17,6 +19,14 @@
             <img class="player-panel-img" src="./img/cross.png">player 2
         </div>
     </div>
+    <div id="line-1" class="horizontal-line" style="top: 161px;"></div>
+    <div id="line-2" class="horizontal-line" style="top: 301px;"></div>
+    <div id="line-3" class="horizontal-line" style="top: 441px;"></div>
+    <div id="line-4" class="horizontal-line make-vertical" style="top: 301px; left: 500px;"></div>
+    <div id="line-5" class="horizontal-line make-vertical" style="top: 301px;"></div>
+    <div id="line-6" class="horizontal-line make-vertical" style="top: 301px; right: 503px;"></div>
+    <div id="line-7" class="horizontal-line" style="top: 301px; transform: rotate(45deg) scaleX(0.0);"></div>
+    <div id="line-8" class="horizontal-line" style="top: 301px; transform: rotate(-45deg) scaleX(0.0);"></div>
     <table>
         <tr>
             <td onclick="fillShape(0)">
