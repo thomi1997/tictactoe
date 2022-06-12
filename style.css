@@ -3,10 +3,12 @@ body {
     justify-self: center;
     align-items: center;
     flex-direction: column;
+    background-color: #fffbb5;
 }
 
 .player-panel {
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
     margin-bottom: 32px;
 }
@@ -75,6 +77,20 @@ table {
     display: none;
 }
 
+.links-area {
+    height: 133px;
+    width: 133px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+/*b-r=border-radius*/
+.b-r {
+    border-radius: 5px;
+}
+
 .horizontal-line {
     height: 10px;
     width: 350px;
@@ -91,11 +107,12 @@ table {
 }
 
 .game-over {
-    height: 500px;
+    height: 530px;
     object-fit: contain;
     position: absolute;
     left: 0;
     right: 0;
+    top: 47px;
     width: 100%;
     z-index: 2;
     animation: zoomIn 225ms ease-in-out;
@@ -114,18 +131,23 @@ table {
 }
 
 .restart-btn {
-    background-color: aqua;
+    background-color: rgb(39,20,205);
     z-index: 2;
-    width: 300px;
+    width: 399px;
     height: 100px;
     color: white;
     font-size: 40px;
     border: 1px solid rgba(0,0,0,0.5);
     cursor: pointer;
     position: absolute;
-    bottom: 350px;
+    top: 550px;
+    border-radius: 50px;
 }
 
 .restart-btn:hover {
-    background-color: antiquewhite;
+    background-color: rgba(39, 20, 205, 0.863);
+}
+
+@media (max-width:1800px) {
+    
 }
