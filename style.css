@@ -148,6 +148,34 @@ table {
     background-color: rgba(39, 20, 205, 0.863);
 }
 
-@media (max-width:1800px) {
-    
+@media (max-width:480px) {
+    table {
+        width: 300px;
+    }
+
+    .shape {
+        left: 8px;
+    }
+
+    .player-panel-div {
+        flex-direction: column;
+    }
+
+    .game-over {
+        top: 80px;
+    }
+
+    .line-left {
+        left: -127px;
+    }
+
+    .restart-btn {
+        margin-top: 10px;
+        width: 250px;
+    }
+
+    .links-area {
+        height: 300px;
+        width: 300px;
+    }
 }
